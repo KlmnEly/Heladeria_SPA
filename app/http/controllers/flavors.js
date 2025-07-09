@@ -1,6 +1,6 @@
-import { flavors } from '../database/apis.js';
+import { flavors } from '../../../database/apis.js';
 
-async function getFlavors () {
+export async function getFlavors () {
     try {
         flavors.forEach (flavor => {
             const row = document.createElement('tr');
@@ -16,5 +16,3 @@ async function getFlavors () {
         console.log(error)
     }
 }
-
-getFlavors();

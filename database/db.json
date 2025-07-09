@@ -9,6 +9,11 @@
           "id": 2,
           "name": "user",
           "status": 1
+        },
+        {
+          "id": 3,
+          "name": "invitado",
+          "status": 0
         }
     ],
     "users": [

@@ -1,6 +1,6 @@
-import { clients } from '../database/apis.js';
+import { clients } from '../../../database/apis.js';
 
-async function getClients () {
+export async function getClients () {
     try {
         clients.forEach (client => {
             const row = document.createElement('tr');
@@ -18,5 +18,3 @@ async function getClients () {
         console.log(error)
     }
 }
-
-getClients()

@@ -1,6 +1,6 @@
-import { roles } from '../database/apis.js';
+import { roles } from '../../../database/apis.js';
 
-async function getRoles() {
+export async function getRoles() {
   try {
     roles.forEach(role => {
       const row = document.createElement("tr");
@@ -15,5 +15,3 @@ async function getRoles() {
     console.log(error);
   }
 }
-
-getRoles();

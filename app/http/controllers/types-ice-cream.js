@@ -1,6 +1,6 @@
-import { typesIceCreams } from "../database/apis.js";
+import { typesIceCreams } from "../../../database/apis.js";
 
-async function getTypes() {
+export async function getTypesIceCream() {
   try {
     typesIceCreams.forEach((type) => {
       const row = document.createElement("tr");
@@ -17,4 +17,3 @@ async function getTypes() {
   }
 }
 
-getTypes();
